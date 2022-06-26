@@ -22,19 +22,20 @@
     <div id="modal" class="modal-design">
         <div class="modal-content">
             <div>
-                <span class="close">x</span>
+                <span onclick="cancel()" class="close">x</span>
                 <p class="para">Modal title</p>
             </div>
             <div>
                 <p class="para para-m">Name</p>
-                <input type="text" class="textbox" placeholder="Name">
+                <input type="text" id="userName" class="textbox" placeholder="Name">
             </div>
             <div class="confirm-section">
-                <button class="button-confirm">Submit</button>
-                <button class="cancel button-confirm button-confirm-c">Close</button>
+                <button class="button-confirm" onclick="nameOf()">Submit</button>
+                <button onclick="cancel()" class="button-confirm button-confirm-c">Close</button>
             </div>
         </div>
     </div>
+    <div class="display"></div>
 
     <script src="main.js"></script>
 </body>

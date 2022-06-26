@@ -1,26 +1,42 @@
 console.log("main.js loaded...");
-let button = document.getElementById("button");
-let modal = document.getElementById("modal");
-let span = document.getElementsByClassName("close")[0];
-let cancel = document.getElementsByClassName("cancel")[0];
+
+let button = document.querySelector("#button");
+let modal = document.querySelector("#modal");
+
+function cancel() {
+  modal.style.display = "none";
+  location.reload();
+
+}
 
 button.onclick = function() {
   modal.style.display = "block";
-}
-
-cancel.onclick = function(){
-  modal.style.display = "none";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
+  
 }
 
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    cancel();
   }
   // else {
   //   modal.style.display = "block";
   // }
+}
+
+function nameOf() {
+  let userName = document.querySelector("#userName");
+  let display = document.querySelector('.display');
+  
+  modal.style.display = "none";
+
+  if (userName.value == 'Sabin' || userName.value == 'Ianis') {
+    display.innerText = 'Hello ' + userName.value + ', this is my first modal!';
+    userName.value = '';
+  }
+  else{
+    display.innerText = 'Hello '+ userName.value + '!';
+    userName.value = '';
+  }
+  
+
 }

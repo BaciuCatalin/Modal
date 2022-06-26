@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Nunito+Sans:wght@300&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Modal</title>
+</head>
+
+<body>
+    <div>
+        <h1>This is my Modal</h1>
+        <button id="button">click</button>
+    </div>
+    <div id="modal" class="modal-design">
+        <div class="modal-content">
+            <div>
+                <span class="close">x</span>
+                <p class="para">Modal title</p>
+            </div>
+            <div>
+                <p class="para para-m">Name</p>
+                <input type="text" class="textbox" placeholder="Name">
+            </div>
+            <div class="confirm-section">
+                <button class="button-confirm">Submit</button>
+                <button class="cancel button-confirm button-confirm-c">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
